@@ -1,0 +1,86 @@
+.holder{
+    margin-top: 1cm;
+}
+.btn{
+  /* border-image: linear-gradient(to left, rgb(232, 140, 65), black) 1; */
+    width: 330px;
+    background-image: linear-gradient(to right,#1c0600, #ec3902, #422e05);
+    padding: 10px;
+    border-radius: 9px;
+    border-top-right-radius: 9px;
+    margin-top: 2.5cm;
+    font-weight: 600;
+}
+.btn.inverted {
+    background-image: linear-gradient(to right, #422e05, #ec3902, #1c0600);
+  }
+h1{
+    margin-top: 0.7cm;
+    text-align: "center";
+    font-size: 0.8cm;
+}
+.one{
+    height: 3cm;
+  
+    border-radius: 65px;
+
+}
+h2{
+    margin-top: 0.2cm;
+    text-align: "center";
+    font-size: 0.6cm;
+    margin-bottom: 2.4cm;
+    color: grey;
+}
+
+.c{
+    background-image: linear-gradient(to bottom, #ec6302ca, black);
+}
+.cin{
+    background-color: black;
+}
+#c0{
+    width: 330px;
+    border-radius: 165px;
+
+    height: 330px;
+}
+#c1{
+    width: 270px;
+    border-radius: 135px;
+    height: 270px;
+}
+#c2{
+    width: 210px;
+    border-radius: 105px;
+    height: 210px;
+}
+#c3{
+    width: 150px;
+    border-radius: 75px;
+    height: 150px;
+}
+
+#c0in{
+    width: 328px;
+    border-radius: 164px;
+    height: 328px;
+}
+
+#c1in{
+    width: 268px;
+    border-radius: 162px;
+    height: 268px;
+}
+#c2in{
+    width: 208px;
+    border-radius: 104px;
+    height: 208px;
+}
+#c3in{
+    width: 148px;
+    border-radius: 74px;
+    height: 148px;
+}
+
+
