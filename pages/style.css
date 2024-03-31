@@ -2,19 +2,13 @@
     margin-top: 0.2cm;
 }
 .btn{
-  /* border-image: linear-gradient(to left, rgb(232, 140, 65), black) 1; */
     width: 327px;
     background-image: linear-gradient(to right,#1c0600, #ec3902, #422e05);
-    /* padding: 10px; */
     height: 42px;
     border-radius: 9px;
     border-top-right-radius: 9px;
     margin-top: 3cm;
     font-weight: 600;
-}
-
-.status{
-
 }
 
 h1{
