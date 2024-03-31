@@ -2,6 +2,8 @@ This is a Next.js project that has PWA and push notification support along with 
 
 ## PWA(Progressive Web App) Setup
 
+[Project Link](https://assignment-kaustubh.vercel.app)
+
 The deployed web app has PWA and push notifications support.
 
 Check out index.js in the projects folder and style.css in the public folder.
