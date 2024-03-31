@@ -2,18 +2,24 @@ import { useState } from 'react';
 import Image from "next/image";
 
 import bell from "../public/images/bell1.png"
+import status from "../public/images/status.png"
 
 export default function Home() {
 
   const sendNotification = () => {
       new Notification('Hello!', {
-        body: 'This is a notification from your Next.js app!',
+        body: 'Notification from Kaustubh',
         icon: bell, // Use your desired icon
       });
   };
 
   return (
+    <div className="top">
+    <div className="status" style={{display:"flex", justifyContent:"center"}}>
+      <Image src={status} alt="hello" width={375} height={130} />
+      </div>
     <div className="holder" style={{ display:"flex", justifyContent:"center"}}>
+      
       <div className="layout" style={{ justifyContent:"center"}}>
         <div className="head" style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
           <h1>Lorem Ipsum...</h1>
@@ -44,6 +50,7 @@ export default function Home() {
           <button className="btn" onClick={sendNotification}>Send Notification</button>
         </div>
       </div>
+    </div>
     </div>
   );
 }

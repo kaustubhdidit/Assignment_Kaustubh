@@ -1,19 +1,22 @@
-.holder{
-    margin-top: 1cm;
+.top{
+    margin-top: 0.2cm;
 }
 .btn{
   /* border-image: linear-gradient(to left, rgb(232, 140, 65), black) 1; */
-    width: 330px;
+    width: 327px;
     background-image: linear-gradient(to right,#1c0600, #ec3902, #422e05);
-    padding: 10px;
+    /* padding: 10px; */
+    height: 42px;
     border-radius: 9px;
     border-top-right-radius: 9px;
-    margin-top: 2.5cm;
+    margin-top: 3cm;
     font-weight: 600;
 }
-.btn.inverted {
-    background-image: linear-gradient(to right, #422e05, #ec3902, #1c0600);
-  }
+
+.status{
+
+}
+
 h1{
     margin-top: 0.7cm;
     text-align: "center";
@@ -21,14 +24,12 @@ h1{
 }
 .one{
     height: 3cm;
-  
     border-radius: 65px;
-
 }
 h2{
     margin-top: 0.2cm;
     text-align: "center";
-    font-size: 0.6cm;
+    font-size: 0.5cm;
     margin-bottom: 2.4cm;
     color: grey;
 }
@@ -40,47 +41,47 @@ h2{
     background-color: black;
 }
 #c0{
-    width: 330px;
-    border-radius: 165px;
+    width: 344px;
+    border-radius: 172px;
 
-    height: 330px;
+    height: 344px;
 }
 #c1{
-    width: 270px;
-    border-radius: 135px;
-    height: 270px;
+    width: 278px;
+    border-radius: 139px;
+    height: 278px;
 }
 #c2{
-    width: 210px;
-    border-radius: 105px;
-    height: 210px;
+    width: 222px;
+    border-radius: 111px;
+    height: 222px;
 }
 #c3{
-    width: 150px;
-    border-radius: 75px;
-    height: 150px;
+    width: 160px;
+    border-radius: 80px;
+    height: 160px;
 }
 
 #c0in{
-    width: 328px;
-    border-radius: 164px;
-    height: 328px;
+    width: 342px;
+    border-radius: 171px;
+    height: 342px;
 }
 
 #c1in{
-    width: 268px;
-    border-radius: 162px;
-    height: 268px;
+    width: 276px;
+    border-radius: 138px;
+    height: 276px;
 }
 #c2in{
-    width: 208px;
-    border-radius: 104px;
-    height: 208px;
+    width: 220px;
+    border-radius: 110px;
+    height: 220px;
 }
 #c3in{
-    width: 148px;
-    border-radius: 74px;
-    height: 148px;
+    width: 158px;
+    border-radius: 79px;
+    height: 158px;
 }
 
 
