@@ -3,3 +3,7 @@ This is a [Next.js](https://nextjs.org/) project that has PWA and push notificat
 ## PWA(Progressive Web App) Setup
 
 The deployed web app has PWA and push notifications support.
+
+Check out index.js in the projects folder and style.css in the public folder.
+
+<a href="[https://dev.to/kaustubhdidit](https://drive.google.com/file/d/1YqZtpochf1D7EMfyNlRvzlVY9e8fK-2s/view?usp=share_link)" target="blank"><p>Push Notification in PWA</a>
