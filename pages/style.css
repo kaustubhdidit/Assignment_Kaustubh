@@ -1,15 +1,22 @@
 .top{
     margin-top: 0.2cm;
 }
-.btn{
+.btn {
     width: 327px;
-    background-image: linear-gradient(to right,#1c0600, #ec3902, #422e05);
+    background-image: linear-gradient(to right, #1c0600, #ec3902, #422e05);
     height: 42px;
     border-radius: 9px;
     border-top-right-radius: 9px;
     margin-top: 3cm;
     font-weight: 600;
+    transition: transform 0.3s ease; 
 }
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
 
 h1{
     margin-top: 0.7cm;
@@ -28,9 +35,23 @@ h2{
     color: grey;
 }
 
-.c{
-    background-image: linear-gradient(to bottom, #ec6302ca, black);
+@keyframes gradientTransition {
+    0%, 100% {
+        background-position: 500% 600%;
+    }
+    50% {
+        background-position: 00% 00%;
+    }
 }
+
+.c {
+    background-image: linear-gradient(to bottom, #ec6302ca, black);
+    background-size: 100% 200%; 
+    animation: gradientTransition 6s infinite alternate;
+}
+
+
+
 .cin{
     background-color: black;
 }
@@ -55,6 +76,8 @@ h2{
     border-radius: 80px;
     height: 160px;
 }
+
+
 
 #c0in{
     width: 342px;
