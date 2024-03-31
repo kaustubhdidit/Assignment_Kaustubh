@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project that has PWA and push notificat
 
 The deployed web app has PWA and push notifications support.
 
-<img align="center" src="https://drive.google.com/file/d/1YqZtpochf1D7EMfyNlRvzlVY9e8fK-2s/view?usp=share_link" alt="kaustubhdidit" height="30" width="40" />
+<p align="center"><img align="center" alt="Coding" width="400" src="https://drive.google.com/file/d/1YqZtpochf1D7EMfyNlRvzlVY9e8fK-2s/view?usp=share_link"></p>
 
 ## Learn More
 
