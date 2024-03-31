@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project that has PWA and push notification support along with several animations.
+This is a Next.js project that has PWA and push notification support along with several animations.
 
 ## PWA(Progressive Web App) Setup
 
