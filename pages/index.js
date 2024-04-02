@@ -1,25 +1,42 @@
-import { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import Image from "next/image";
 
 import bell from "../public/images/bell1.png"
-import status from "../public/images/status.png"
 
 export default function Home() {
+  const [notificationGranted, setNotificationGranted] = useState(false);
+
+  useEffect(() => {
+    // Check the notification permission when the component mounts
+    if (Notification.permission === 'granted') {
+      setNotificationGranted(true);
+    }
+  }, []);
+
+  const requestNotificationPermission = () => {
+    if (Notification.permission === 'granted') {
+      setNotificationGranted(true);
+    } else if (Notification.permission !== 'denied') {
+      Notification.requestPermission().then(permission => {
+        if (permission === 'granted') {
+          setNotificationGranted(true);
+        }
+      });
+    }
+  };
 
   const sendNotification = () => {
+    if (notificationGranted) {
       new Notification('Hello!', {
-        body: 'Notification from Kaustubh',
-        icon: bell, // Use your desired icon
+        body: 'This is a notification from your Next.js app!',
       });
+    } else {
+      alert('Please grant permission to receive notifications.');
+    }
   };
 
   return (
-    <div className="top">
-    <div className="status" style={{display:"flex", justifyContent:"center"}}>
-      <Image src={status} alt="hello" width={375} height={130} />
-      </div>
     <div className="holder" style={{ display:"flex", justifyContent:"center"}}>
-      
       <div className="layout" style={{ justifyContent:"center"}}>
         <div className="head" style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
           <h1>Lorem Ipsum...</h1>
@@ -46,11 +63,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <button className="btn" onClick={sendNotification}>Send Notification</button>
-        </div>
+        {notificationGranted ? (
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button className="btn" onClick={sendNotification}>Send Notification</button>
+          </div>
+        ) : (
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button className="btn" onClick={requestNotificationPermission}>Grant Notification Permission</button>
+          </div>
+        )}
       </div>
-    </div>
     </div>
   );
 }
